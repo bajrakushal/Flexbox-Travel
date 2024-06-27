@@ -134,6 +134,10 @@
 }
 
 /*Latest Post*/
+.main-post{
+    display: flex;
+    gap: 30px;
+}
 .latest-post{
     background: url(./assets/bg.jpg) no-repeat center;
     background-size: cover;
@@ -171,10 +175,7 @@ article .art-img{
 .date{
     margin-bottom: 15px;
 }
-.main-post{
-    display: flex;
-    gap: 30px;
-}
+
 .article{
     width: 70%;
     
@@ -291,4 +292,47 @@ footer{
     color: white;
     text-align: center;
     padding: 60px;
+}
+/*Ipad Query*/
+@media (width < 992px) {
+    .main-post{
+        display: flex;
+        flex-direction: column;
+    }
+    .article{
+        width: 100%;
+        
+    }
+    .side-links{
+        display: flex;
+        gap: 2rem;
+        width: 100%;
+    }
+    .side-links > div{
+        flex-grow: 1;
+
+    }
+}
+
+
+/*Mobile screen*/
+@media (max-width: 550px) {
+
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+
+    article .art-img{
+        width: 100%;
+    }
+    .btn{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .side-links{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
